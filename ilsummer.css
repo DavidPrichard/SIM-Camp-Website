@@ -259,7 +259,16 @@ iframe {
 .note > span,
 .nav-link{
 	padding: 0.5em;
-	line-height: 41px; /* prevents overlapping padding */
+	line-height: 41px;
+}
+
+.more-link {
+    border-left: 0.5em solid rgba(187, 187, 187, 0.65);
+}
+
+.more-link > span {
+    padding: 0.5em 0.5em 0.5em 0;
+    line-height: 41px;
 }
 
 .color-box {
@@ -352,8 +361,8 @@ a.current {
 	border-left: 3px solid #ffdb4d;
 }
 
-.color-box > .note > span {
-	background: rgba(189, 189, 189, 0.65);
+.more-link > span {
+	background: rgba(187, 187, 187, 0.65);
 }
 
 .note > span {
