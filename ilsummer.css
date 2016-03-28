@@ -319,8 +319,8 @@ footer {
 	padding: 1em;
 	margin-top: 1em;
 	text-align: center;
-	background: #ffd16b;
-	background-image: url(images/orange-triangles-bottom.jpg);
+	background: #ff8927;
+	/*background-image: url(images/orange-triangles-bottom.jpg);*/
 }
 
 .application-page footer {
@@ -441,12 +441,6 @@ p > a:focus {
 .nav-link:focus {
 	background: #ffaf00;
 	color: inherit;
-}
-
-.sm-logo:hover,
-.sm-logo:focus {
-	border-color: #bbb;
-	background: #bbb;
 }
 
 /* Selection Colors */
