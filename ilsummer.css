@@ -259,6 +259,7 @@ iframe {
 .note > span,
 .nav-link{
 	padding: 0.5em;
+	line-height: 41px; /* prevents overlapping padding */
 }
 
 .color-box {
