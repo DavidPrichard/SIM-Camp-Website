@@ -118,7 +118,7 @@ textarea {
 
 input[type="search"] {
 	-webkit-appearance: none;
-	box-sizing: border-box; /* Prevents issues in flexbox in all browsers*/
+	box-sizing: border-box; /* Prevents flexbox issues in all browsers*/
 	border-radius: 0;
 }
 
@@ -216,7 +216,7 @@ iframe {
 	text-align: center;
 	color: #fff;
 	background: #f47221;
-	background-image: url(images/orange-triangles-top.jpg);
+	background-image: url(images/triangles-cropped.jpg);
 }
 
 .header-logo {
