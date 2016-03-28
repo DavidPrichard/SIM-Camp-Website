@@ -427,7 +427,9 @@ a.current {
 /* Pseudo-Element Colors */
 
 p > a:hover,
-p > a:focus {
+p > a:focus,
+.sponsors a:hover,
+.sponsors a:focus {
 	color: #0078ff;
 }
 
