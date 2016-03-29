@@ -252,11 +252,23 @@ iframe {
 	max-height: 56vh;
 	left: 50%;
 	transform: translate(-50%);
+    z-index: 10;
 }
 
 .hero-spacer {
 	height: 40vw;
 	max-height: 56vh;
+}
+
+.hero-spacer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100vw;
+    height: 40vw;
+    max-height: 56.1vh; /* extra 0.1 needed to match hero height on all browsers */
+    background: #8A7055;
+    z-index: 1;
 }
 
 .note > span,
