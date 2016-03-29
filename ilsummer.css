@@ -187,7 +187,7 @@ h3 {
 
 h4 {
 	font: 700 1.25em/1 "Lato", sans-serif;
-	margin: 2em 0 1em;
+	margin: 2em 1em 1em;
 }
 
 h5 {
@@ -248,12 +248,14 @@ iframe {
 
 .hero {
 	position: absolute;
-	right: 0;
-	width: 100vw;
+	max-height: 56vh;
+	left: 50%;
+	transform: translate(-50%);
 }
 
 .hero-spacer {
 	height: 40vw;
+	max-height: 56vh;
 }
 
 .note > span,
