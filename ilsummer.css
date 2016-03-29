@@ -522,6 +522,8 @@ a {
 		border-top: 2px solid rgba(255,227,77, 0.3);
 	}
 
+	.hero,
+	.hero-spacer,
 	.sponsor-logos {
 		display: none;
 	}
