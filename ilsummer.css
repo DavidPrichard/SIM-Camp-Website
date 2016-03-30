@@ -176,7 +176,7 @@ h1 {
 
 h2 {
 	font: 300 2.5em/1 "Lato",sans-serif;
-	margin: 1em 0 0.6em;
+	margin: 0.8em 0 0.6em;
 	text-align: center;
 }
 
@@ -245,6 +245,12 @@ iframe {
 .column {
 	max-width: 675px;
 	margin: 0 auto;
+}
+
+.sim-camp-logo {
+    display: block;
+    margin: 2em auto 0;
+    width: 20vw;
 }
 
 .hero {
@@ -342,14 +348,10 @@ iframe {
 
 footer {
 	padding: 1em;
-	margin-top: 1em;
+	margin-top: 2.5em;
 	text-align: center;
 	background: #ff8927;
 	background-image: url(images/triangles-cropped-bottom.jpg);
-}
-
-.application-page footer {
-	margin-top: -3px;
 }
 
 /* Color Scheme */
@@ -521,14 +523,15 @@ a {
 	h1 {
 		font-size: 28px;
 	}
+    
+    h2 {
+        font-size: 36px;
+        margin-top: 1em;
+    }
 
 	.navigation > li > a {
 		padding: 7px 12px;
 		font-size: 22px;
-	}
-
-	h2 {
-		font-size: 30px;
 	}
 
 	.color-box {
@@ -539,12 +542,17 @@ a {
 
 	.hero,
 	.hero-spacer,
-	.sponsor-logos {
+	.sponsor-logos,
+    .sim-camp-logo {
 		display: none;
 	}
 }
 
 @media (max-width: 500px) {
+
+    h2 {
+        font-size: 30px;
+    }
 
 	.timeslot {
 		width: 6.5em;
