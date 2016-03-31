@@ -170,8 +170,12 @@ body {
 }
 
 h1 {
-	font: 100 2.5em/0.8 "Merriweather", Georgia, serif;
-	margin: 1em 0;
+	font: 100 2.5em/1 "Merriweather", Georgia, serif;
+	margin: 0.75em 0 0.5em;
+    text-shadow:
+        0 0 2em rgb(253,89,0),
+        0 0 1em rgb(253,89,0),
+        0 0 0.5em rgb(253,89,0);
 }
 
 h2 {
@@ -181,7 +185,7 @@ h2 {
 }
 
 h3 {
-	font: 700 1.5em/1 "Lato", sans-serif;
+	font: 400 1.7em/1 "Lato", sans-serif;
 	margin: 1.5em 2% 0.5em;
 }
 
@@ -212,11 +216,8 @@ iframe {
 /* Structure and Qualified Elements */
 
 #site-title {
-	padding: 2em 0;
+	padding: 1.75em 0 1em;
 	text-align: center;
-	color: #fff;
-	background: #f47221;
-	background-image: url(images/triangles-cropped.jpg);
 }
 
 .header-logo {
@@ -228,6 +229,7 @@ iframe {
 	padding: 0 4%;
 	margin: 0;
 	text-align: center;
+    box-shadow: 0 0 16px -12px #000;
 }
 
 .navigation > li {
@@ -249,8 +251,8 @@ iframe {
 
 .sim-camp-logo {
     display: block;
-    margin: 2em auto 0;
-    width: 20vw;
+    margin: 1.75em auto -1em;
+    width: 15vw;
 }
 
 .hero {
@@ -286,10 +288,6 @@ iframe {
 	line-height: 41px;
 }
 
-.more-link {
-    border-left: 0.5em solid rgba(187, 187, 187, 0.65);
-}
-
 .more-link > span {
     padding: 0.5em 0.5em 0.5em 0;
     line-height: 41px;
@@ -300,23 +298,24 @@ iframe {
 	margin-bottom: 1em;
 }
 
-.color-box > h3,
-.color-box > h4 {
-	margin: 0 2%;
+.color-box > h3 {
+	margin: 8px 2% 20px;
 }
 
 .sm-logo {
 	display: inline-block;
 	margin: 1em;
-	border: 6px solid #fff;
-	border-radius: 7px;
 	padding: 2px 2px 0 2.5px;
-	background: #fff;
 }
 
 .sm-logo > svg {
 	height: 2em;
 	width: 2em;
+}
+
+.instagram > svg {
+    background: #fff;
+    border-radius: 4px;
 }
 
 .event-info {
@@ -349,12 +348,35 @@ iframe {
 	height: 120px;
 }
 
+.bubble {
+    max-width: 240px;
+    margin: 0 auto 24px;
+    border: 1px solid #fff5ba;
+    border-radius: 32px;
+    background: #fff5ba;
+}
+
+.bubble::after {
+    content: "";
+    position: absolute;
+    margin-left: 24px;
+    width: 0;
+    height: 0;
+    border: 22px solid;
+    border-color: #fff5ba transparent transparent;
+}
+
+.social-media {
+    display: inline-block;
+    background: #fff5ba;
+    border: 6px solid #fff5ba;
+    border-radius: 7px;
+}
+
 footer {
 	padding: 1em;
 	margin-top: 2.5em;
 	text-align: center;
-	background: #ff8927;
-	background-image: url(images/triangles-cropped-bottom.jpg);
 }
 
 /* Color Scheme */
@@ -370,15 +392,33 @@ a.current {
 	background: #ffdc61;
 }
 
+#site-title {
+color: #fff;
+background:
+    linear-gradient( to bottom,
+        rgba(159,19,8,0), rgba(253,89,0,0.5), rgba(253,89,0,0.7)
+        ),
+    url(images/triangles-top.jpg);
+}
+
 .navigation {
 	color: #fff;
-	background: #ee4900;
+	background: #f76310;
 }
 
 .color-box {
 	background: #fff5ba;
 	border: 1px solid rgba(255,227,77, 0.05);
 	border-left: 3px solid #ffdb4d;
+}
+
+.color-box:nth-child(odd) {
+    border-left: 0;
+    border-right: 3px solid #ffdb4d;
+}
+
+.more-link {
+    border-left: 0.5em solid rgba(187, 187, 187, 0.65);
 }
 
 .more-link > span {
@@ -394,6 +434,21 @@ a.current {
 	color: inherit;
 }
 
+.schedule-title {
+    background: #f6f6f6;
+}
+
+footer {
+    background: #ff8927;
+    background-image:
+        linear-gradient(to right,
+            rgba(255,255,255,0), rgba(255,255,255,0),
+            #FD5900, #FD5900,
+            rgba(255,255,255,0), rgba(255,255,255,0)
+        ),
+        url(images/triangles-bottom.jpg);
+}
+
 	/* Schedule Page */
 
 .schedule-title {
@@ -401,7 +456,6 @@ a.current {
 	padding: 1em;
 	margin: 2em auto 0;
 	max-width: 526px;
-	background:#f6f6f6;
 }
 
 .schedule {
