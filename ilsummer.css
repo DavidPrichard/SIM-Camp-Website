@@ -170,7 +170,7 @@ body {
 }
 
 h1 {
-	font: 100 2.5em/1 "Merriweather", Georgia, serif;
+	font: 300 2.5em/1 "Lato", Georgia, sans-serif;
 	margin: 0.75em 0 0.5em;
     text-shadow:
         0 0 2em rgb(253,89,0),
@@ -304,13 +304,13 @@ iframe {
 
 .sm-logo {
 	display: inline-block;
-	margin: 1em;
+	margin: 12px;
 	padding: 2px 2px 0 2.5px;
 }
 
 .sm-logo > svg {
-	height: 2em;
-	width: 2em;
+	height: 2.5em;
+	width: 2.5em;
 }
 
 .instagram > svg {
@@ -327,9 +327,10 @@ iframe {
 }
 
 .application-form {
-	width: 100%;
+    display: block;
+    width: 600px;
 	min-height: 1440px;
-	margin: 0;
+	margin: 0 auto;
 	border: 0;
 }
 
@@ -374,7 +375,7 @@ iframe {
 }
 
 footer {
-	padding: 1em;
+	padding: 2em;
 	margin-top: 2.5em;
 	text-align: center;
 }
@@ -395,15 +396,14 @@ a.current {
 #site-title {
 color: #fff;
 background:
-    linear-gradient( to bottom,
-        rgba(159,19,8,0), rgba(253,89,0,0.5), rgba(253,89,0,0.7)
-        ),
-    url(images/triangles-top.jpg);
+    linear-gradient( to bottom, rgba(159,19,8,0), rgba(253,89,0,0.5), rgba(253,89,0,0.7) ),
+    url(images/triangles-top.jpg),
+    rgb(253,89,0);
 }
 
 .navigation {
 	color: #fff;
-	background: #f76310;
+    background: #ff5000;
 }
 
 .color-box {
@@ -440,13 +440,7 @@ background:
 
 footer {
     background: #ff8927;
-    background-image:
-        linear-gradient(to right,
-            rgba(255,255,255,0), rgba(255,255,255,0),
-            #FD5900, #FD5900,
-            rgba(255,255,255,0), rgba(255,255,255,0)
-        ),
-        url(images/triangles-bottom.jpg);
+    background-image: url(images/triangles-bottom.jpg);
 }
 
 	/* Schedule Page */
@@ -462,13 +456,13 @@ footer {
 	list-style: none;
 	padding: 0;
 	margin: 0 auto;
-	max-width: 580px;
+	max-width: 587px;
 }
 
 .flexbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .schedule-box {
@@ -559,6 +553,10 @@ a {
 	transition: color 0.2s ease-out 0s;
 }
 
+.navigation > li > a {
+    transition: none;
+}
+
 .navigation {
 	transition: background-color 1.5s ease-in-out 0s;
 }
@@ -634,4 +632,8 @@ a {
 	.clip-text {
 		display: none;
 	}
+    
+    .application-form {
+        min-height: 1480px;
+    }
 }
