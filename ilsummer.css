@@ -166,11 +166,11 @@ textarea {
 /* Elements and Pseudo-Elements */
 
 body {
-	font: 18px/1 "Source Sans Pro", sans-serif;
+	font: 19px/1 "Source Sans Pro", sans-serif;
 }
 
 h1 {
-	font: 300 2.5em/1 "Lato", Georgia, sans-serif;
+	font: 300 2.75em/1 "Lato", Georgia, sans-serif;
 	margin: 0.75em 0 0.5em;
     text-shadow:
         0 0 2em rgb(253,89,0),
@@ -245,7 +245,7 @@ iframe {
 }
 
 .column {
-	max-width: 675px;
+	max-width: 740px;
 	margin: 0 auto;
 }
 
@@ -268,7 +268,6 @@ iframe {
 	height: 40vw;
 	max-height: 50vh;
     padding-top: 1em; /* matches behavior of margin for absolutely pos. hero */
-    margin-bottom: 2.5em;
 }
 
 .hero-spacer::before {
@@ -290,12 +289,12 @@ iframe {
 
 .more-link > span {
     padding: 0.5em 0.5em 0.5em 0;
-    line-height: 41px;
+    line-height: 44px;
 }
 
 .color-box {
 	padding: 0.5em 0;
-	margin-bottom: 1em;
+	margin: 1em 0;
 }
 
 .color-box > h3 {
@@ -344,6 +343,12 @@ iframe {
 	margin: 0.5em 0;
 }
 
+.sponsor-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .sponsor-logos img {
 	margin: 1.5em 1em;
 	height: 120px;
@@ -378,6 +383,10 @@ footer {
 	padding: 2em;
 	margin-top: 2.5em;
 	text-align: center;
+}
+
+.main-page > footer {
+    margin-top: 0;
 }
 
 /* Color Scheme */
@@ -608,6 +617,7 @@ a {
 
 	.hero,
 	.hero-spacer,
+    .bottom-spacer,
 	.sponsor-logos,
     .sim-camp-logo {
 		display: none;
