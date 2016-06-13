@@ -457,8 +457,9 @@ footer {
 .schedule-title {
 	color: inherit;
 	padding: 1em;
-	margin: 2em auto 0;
-	max-width: 526px;
+	margin: 1.5em auto 0;
+	box-sizing: border-box;
+	max-width: 587px;
 }
 
 .schedule {
